@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  jupyterlab:
+    image: jupyter_docker       # Use the tagged image
+    container_name: jupyterlab
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./data:/app/data        # Maps local 'data' folder to '/app/data' in the container
+      - ./src:/app/src          # Maps local 'src' folder to '/app/src' in the container
+      - ./notebooks:/app/notebooks  # Maps local 'notebooks' folder to '/app/notebooks' in the container
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
+
+ 

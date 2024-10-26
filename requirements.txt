@@ -1,0 +1,13 @@
+jupyterlab
+mlflow
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+tensorflow  # or pytorch depending on your use case
+xgboost
+catboost
+lightgbm
+
+
