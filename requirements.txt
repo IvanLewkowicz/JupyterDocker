@@ -1,13 +1,12 @@
-jupyterlab
-mlflow
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-tensorflow  # or pytorch depending on your use case
-xgboost
-catboost
-lightgbm
-
-
+jupyterlab==3.0.16
+mlflow==1.19.0
+pandas==1.3.5
+numpy==1.21.5
+scikit-learn==0.24.2
+matplotlib==3.4.3
+seaborn==0.11.2
+torch==1.8.1
+xgboost==1.4.2
+catboost==0.26
+lightgbm==3.3.0
+protobuf<3.21.0
